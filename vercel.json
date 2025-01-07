@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "chatroom.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "chatroom.js" }
+  ]
+}

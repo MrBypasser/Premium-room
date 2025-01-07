@@ -3,11 +3,11 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Predefined role keys
+// Predefined secure role keys
 const ROLE_KEYS = {
-  Owner: 'superownerkey123',
-  Alpha: 'alphakey456',
-  'Epic Man': 'epickey789'
+  Owner: 'xwf213Dha',
+  Alpha: 'a3Bc8zKlm',
+  'Epic Man': 'Ep1cM@nKey'
 };
 
 // In-memory data stores (for simplicity)
@@ -16,7 +16,6 @@ const messages = []; // [{ username, message, timestamp }]
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static('public'));
 
 // Serve HTML UI
 app.get('/', (req, res) => {
